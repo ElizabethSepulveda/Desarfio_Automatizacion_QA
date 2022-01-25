@@ -16,11 +16,11 @@ Realice el siguiente flujo utilizando Selenium con el lenguaje de programación 
 * Tomar evidencia de cada producto añadido al carro
 * Validar que los articulos en el carro sean Ipod Classic y Imac
 * Evidencia de creación de la cuenta
-* Evidencia de paso a paso de checkout
+* Evidencia de paso a paso del checkout
 * Validar que despacho y costo sea = Flat Shipping Rate - $5.00
 * Evidencia de costo final de la orden
 * Evidencia de orden completa
-* Evidencia de apartado "Order History" y validar el estado de la compra se encuentre en estado "Pending"
+* Evidencia de apartado "Order History" y validar que el estado de la compra se encuentre en estado "Pending"
 * Validar datos de dirección de pago v/s los ingresados al crear la cuenta
 
 # Punto Extra
