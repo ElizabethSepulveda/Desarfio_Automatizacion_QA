@@ -1,4 +1,4 @@
-# Desarfio_Automatizacion_QA
+# Desafio_Automatizacion_QA
 
 Realice el siguiente flujo utilizando Selenium con el lenguaje de programación que prefiera.
 
