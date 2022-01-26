@@ -9,12 +9,12 @@ Realice el siguiente flujo utilizando Selenium con el lenguaje de programación 
 * Realizar login con credenciales obtenidas de un archivo externo a elección (Basta que sea un email con estructura válida y contraseña)
 * Crear una cuenta
 * Continuar con la compra y llegar a la orden completa
-* Visitar el historial de ordenes y validar resumen de orden 
+* Visitar el historial de órdenes y validar resumen de orden 
 * Cerrar sesión
 
 # Validaciones Mínimas
 * Tomar evidencia de cada producto añadido al carro
-* Validar que los articulos en el carro sean Ipod Classic y Imac
+* Validar que los artículos en el carro sean Ipod Classic y Imac
 * Evidencia de creación de la cuenta
 * Evidencia de paso a paso del checkout
 * Validar que despacho y costo sea = Flat Shipping Rate - $5.00
@@ -26,7 +26,7 @@ Realice el siguiente flujo utilizando Selenium con el lenguaje de programación 
 # Punto Extra
 * "Comprar un monitor Apple Cinema 30'' con las siguientes opciones disponibles:
   - Radio = Large (+30.00)
-  - Checkbox  multiple = 2 (+20.00) y 4 (+40.00)
+  - Checkbox múltiple = 2 (+20.00) y 4 (+40.00)
   - Texto = Test_1
   - Select = Yellow (+2.00)
   - TextArea = Data de prueba
@@ -41,11 +41,9 @@ Realice el siguiente flujo utilizando Selenium con el lenguaje de programación 
 * Archivo de entrada de data para la ejecución de la automatización
 * Archivo/s de salida (Reporte, log, evidencias tomadas)
 * La solución debe contener un README.md con la documentación de la automatización.
-* Pre requisitos
+* Pre-requisitos
 * Instrucciones para ejecutar
 * Detalle Flujo
 * Debe ser enviada vía un pull request a este repositorio [Desafío Automatización](https://github.com/Previred-QA/Desarfio_Automatizacion_QA)
 * En el detalle del commit debes indicar los siguientes datos (Nombre Completo y Correo Electrónico)
-
-
 
