@@ -1,0 +1,16 @@
+2022-01-28 21:54:23,464 : INFO -: 
+
+Flujo 1 -- @1.1 data_prueba.xlsx | Flujo1 - Flujo 1 - Agregar Objeto al carrito y Pagar
+
+2022-01-28 21:54:23,465 : INFO -: Estoy en la pagina principal
+2022-01-28 21:54:24,294 : INFO -: Busco el articulo "product 20"
+2022-01-28 21:54:24,911 : INFO -: Agrego el articulo al carrito
+2022-01-28 21:54:25,285 : INFO -: Aparece el mensaje de confirmación
+2022-01-28 21:54:25,876 : INFO -: 
+
+Flujo 1 -- @1.2 data_prueba.xlsx | Flujo1 - Flujo 1 - Agregar Objeto al carrito y Pagar
+
+2022-01-28 21:54:25,876 : INFO -: Estoy en la pagina principal
+2022-01-28 21:54:26,718 : INFO -: Busco el articulo "Product 14"
+2022-01-28 21:54:27,318 : INFO -: Agrego el articulo al carrito
+2022-01-28 21:54:27,666 : INFO -: Aparece el mensaje de confirmación

@@ -1,0 +1,21 @@
+2022-01-28 21:54:36,269 : INFO -: 
+
+Flujo 3 -- @1.1 data_prueba_1.xlsx | Flujo1 - Flujo 3 - Crear la cuenta y comprar
+
+2022-01-28 21:54:36,341 : INFO -: Compro los articulos
+2022-01-28 21:54:37,735 : INFO -: Continuo para registrar cuenta
+2022-01-28 21:54:42,624 : INFO -: Registro los datos "Anarai, Aguilar, Mi casa, randon, 987654321, Santiago, 101010, anarai123"
+2022-01-28 21:54:43,278 : INFO -: Ingreso el pais "Chile"
+2022-01-28 21:54:45,161 : INFO -: Ingreso la region "Region Metropolitana"
+2022-01-28 21:54:47,910 : INFO -: Acepto los termino y condiciones
+2022-01-28 21:54:51,308 : INFO -: Finalizo el registro
+2022-01-28 21:54:52,723 : INFO -: Confirmo la direccion de envio
+2022-01-28 21:54:53,978 : INFO -: Verifico el descuento de envío
+2022-01-28 21:54:55,370 : INFO -: Confirmo descuento de envío
+2022-01-28 21:54:58,056 : INFO -: Acepto los termino y condiciones
+2022-01-28 21:54:59,458 : INFO -: Confirmar el pago
+2022-01-28 21:55:01,785 : INFO -: Confirmar monto total de la orden
+2022-01-28 21:55:03,194 : INFO -: Confirmar la compra
+2022-01-28 21:55:07,124 : INFO -: Ingresar al Historial de la Compra
+2022-01-28 21:55:09,476 : INFO -: Verificar compra pendiente
+2022-01-28 21:55:30,169 : INFO -: Visualizar detalle de la compra

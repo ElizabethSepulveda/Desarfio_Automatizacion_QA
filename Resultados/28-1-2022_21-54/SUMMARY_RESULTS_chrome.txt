@@ -1,0 +1,7 @@
+______________ SUMMARY - 28-1-2022 21:55 ______________
+
+3 features passed, 0 failed, 0 skipped
+5 scenarios passed, 0 failed, 0 skipped
+29 steps passed, 0 failed, 0 skipped
+Time spent: 1m 7.70s
+
