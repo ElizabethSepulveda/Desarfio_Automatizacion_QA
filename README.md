@@ -1,36 +1,49 @@
 # Desafío_Automatización_QA
 
-### Environment Setup
-- Instalar JDK 8
-- Instalar Maven
+Realice el siguiente flujo utilizando Selenium con el lenguaje de programación que prefiera.
 
-Asegurese de configurar las variables de entorno en su equipo, configuración asociada a Maven y Java
+* Ingresar a [opencart.abstracta.us](http://opencart.abstracta.us/index.php?route=common/home)
+* Añadir al carro de compras un Ipod Classic
+* Añadir al carro de compras un Imac
+* Proceder a realizar la compra
+* Realizar login con credenciales obtenidas de un archivo externo a elección (Basta que sea un email con estructura válida y contraseña)
+* Crear una cuenta
+* Continuar con la compra y llegar a la orden completa
+* Visitar el historial de órdenes y validar resumen de orden 
+* Cerrar sesión
 
-### Runnig Test
+# Validaciones Mínimas
+* Tomar evidencia de cada producto añadido al carro
+* Validar que los artículos en el carro sean Ipod Classic y Imac
+* Evidencia de creación de la cuenta
+* Evidencia de paso a paso del checkout
+* Validar que despacho y costo sea = Flat Shipping Rate - $5.00
+* Evidencia de costo final de la orden
+* Evidencia de orden completa
+* Evidencia de apartado "Order History" y validar que el estado de la compra se encuentre en estado "Pending"
+* Validar datos de dirección de pago v/s los ingresados al crear la cuenta
 
-```
-$ mvn integration-test -Drunner="*Runner" -Dcucumber.options="--tags @run"
-```
-Usar el comando para ejecutar las pruebas, puede usar el tag dispuesto en cada caso de prueba, marcado en en los archivos .feature, por ejemplo @run
+# Punto Extra
+* "Comprar un monitor Apple Cinema 30'' con las siguientes opciones disponibles:
+  - Radio = Large (+30.00)
+  - Checkbox múltiple = 2 (+20.00) y 4 (+40.00)
+  - Texto = Test_1
+  - Select = Yellow (+2.00)
+  - TextArea = Data de prueba
+  - Archivo = Subir archivo .jpg o .png a elección
+  - Fecha = Calendario -> 2022-01-26
+  - Tiempo = Reloj -> 17:25
+  - Fecha y reloj = Calendario y reloj -> 2021-12-24 23:55
+  - Cantidad = 2"
+* Se ponderará la cantidad de valores ingresados en duro y la documentación del código.
 
-```
-$ mvn clean install
-```
-Es posible usar el comando por defecto de maven para ejecutar las pruebas
+# Entregables
+* Archivo de entrada de data para la ejecución de la automatización
+* Archivo/s de salida (Reporte, log, evidencias tomadas)
+* La solución debe contener un README.md con la documentación de la automatización.
+* Pre-requisitos
+* Instrucciones para ejecutar
+* Detalle Flujo
+* Debe ser enviada vía un pull request a este repositorio [Desafío Automatización](https://github.com/Previred-QA/Desarfio_Automatizacion_QA)
+* En el detalle del commit debes indicar los siguientes datos (Nombre Completo y Correo Electrónico)
 
-- Nota: Asegurese que al momento de ejecutar los comandos, sean en el directorio principal, por ejemplo: \Projects\Desafio_Automatizacion_QA, la carpeta Desafio_Automatizacion_QA contiene el directorio src, .pom 
-
-
-### Resources
-
-- No se requiere de instalación de chromedriver, el proyecto contiene un driver manager que automatiza la descarga y puesta en marcha del webdriver
-
-- En el directorio feature, se encuentre los archivo con sintaxis gherkins para su detalle de flujo.
-
-- Se dispone el siguiente directorio para los data read provider: src/test/java/cl/test/dataResource/data
-
-- Para crear nueva cuenta, se debe cambiar el dato del parametro emailNew en el archivo registerUser.properties para que no genere conflictos de datos y se interrumpa el flujo de prueba
-
-- Cuando ejecute los test, se genera varios directorios de salida a continuación: target
-
-- Dentro del directorio anterior se encuentra los recursos de salida (reporte -> target/generated-report), (log ->target/failsafe-reports)
