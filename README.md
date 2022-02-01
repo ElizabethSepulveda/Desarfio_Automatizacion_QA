@@ -29,6 +29,8 @@ Es posible usar el comando por defecto de maven para ejecutar las pruebas
 
 - Se dispone el siguiente directorio para los data read provider: src/test/java/cl/test/dataResource/data
 
+- Para crear nueva cuenta, se debe cambiar el dato del parametro emailNew en el archivo registerUser.properties para que no genere conflictos de datos y se interrumpa el flujo de prueba
+
 - Cuando ejecute los test, se genera varios directorios de salida a continuación: target
 
 - Dentro del directorio anterior se encuentra los recursos de salida (reporte -> target/generated-report), (log ->target/failsafe-reports)
