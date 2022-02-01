@@ -1,0 +1,12 @@
+2022-01-28 21:54:29,613 : INFO -: 
+
+Flujo 2 -- @1.1 data_prueba.xlsx | Flujo1 - Flujo 2 - Revisar el carrito y comprar
+
+2022-01-28 21:54:29,698 : INFO -: Ingreso al carrito de compras
+2022-01-28 21:54:29,961 : INFO -: Verifico que el articulo se agrego al carrito "product 20"
+2022-01-28 21:54:31,864 : INFO -: 
+
+Flujo 2 -- @1.2 data_prueba.xlsx | Flujo1 - Flujo 2 - Revisar el carrito y comprar
+
+2022-01-28 21:54:31,942 : INFO -: Ingreso al carrito de compras
+2022-01-28 21:54:32,203 : INFO -: Verifico que el articulo se agrego al carrito "Product 14"
