@@ -33,4 +33,9 @@ testImplementation group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
 testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
 
 implementation group: 'com.opencsv', name: 'opencsv', version: '3.7'
+
+implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version:'1.0.7'
+
+implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
 }

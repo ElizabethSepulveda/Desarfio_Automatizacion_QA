@@ -5,13 +5,9 @@ import java.io.IOException;
 
 import com.opencsv.CSVReader;
 
-
-public class ShopOpencartAbstractaPage extends BasePage {
+public class CheckOutPage extends BasePage {
 
     String path = "C:\\Users\\crist\\Desktop\\TEST AUTOMATION PREVIRED\\Desafio_Automatizacion_QA\\dataTest\\accountData.csv";
-  
-    private String shopCart = "//span[contains(text(),'Shopping Cart')]"; 
-    private String checkoutCart = "//a[contains(text(),'Checkout')]";
     private String textBoxEmailLogin = "//input[@id='input-email']";
     private String textBoxPasswordLogin = "//input[@id='input-password']";
     private String loginButton = "//input[@id='button-login']";
@@ -36,66 +32,50 @@ public class ShopOpencartAbstractaPage extends BasePage {
     private String conditionsPayment = "//input[@name='agree']";
     private String continuePaymentButton = "//input[@id='button-payment-method']";
     private String confirmOrderButton = "//input[@id='button-confirm']";
-    
+    private String finishOrderButton = "//a[contains(text(),'Continue')]";
 
-
-    public ShopOpencartAbstractaPage(){
+    public CheckOutPage() {
         super(driver);
     }
 
-public void clickProductCart(){
+    public void selectTextBoxEmailLogin() {
 
-    clickElement(shopCart);
-}
+        clickElement(textBoxEmailLogin);
 
-public void selectTextBoxEmailLogin(){
+    }
 
-    clickElement(textBoxEmailLogin);
-    
-}
+    public void selectTextBoxPasswordLogin() {
 
-public void selectTextBoxPasswordLogin(){
+        clickElement(textBoxPasswordLogin);
 
-    clickElement(textBoxPasswordLogin);
-    
-}
+    }
 
-public void clickCheckoutCart(){
-    clickElement(checkoutCart);
-}
+    public void writeCredencialEmail(String credential) {
 
-public void writeCredencialEmail(String credential){
+        write(textBoxEmailLogin, credential);
 
-    write(textBoxEmailLogin,credential);
+    }
 
-}
+    public void writeCredencialPassword(String credential) {
 
-public void writeCredencialPassword(String credential){
+        write(textBoxPasswordLogin, credential);
 
-    write(textBoxPasswordLogin,credential);
+    }
 
+    public void clickRegisterAccount() {
 
-}
+        clickElement(registerRadioButton);
+        clickElement(registerButton);
 
+    }
 
+    public void registerAccount() throws IOException {
 
-public void clickRegisterAccount(){
+        CSVReader reader = new CSVReader(new FileReader(path));
 
-    clickElement(registerRadioButton);
-    clickElement(registerButton);
-    
-  
-}
+        String[] csvCell;
 
-public void registerAccount() throws IOException{
-    
-    CSVReader reader = new CSVReader(new FileReader(path));
-    
-        
-    String [] csvCell;
-
-    
-        while((csvCell = reader.readNext()) != null){
+        while ((csvCell = reader.readNext()) != null) {
             String firstNameText = csvCell[0];
             String lastNameText = csvCell[1];
             String emailText = csvCell[2];
@@ -105,16 +85,16 @@ public void registerAccount() throws IOException{
             String cityText = csvCell[6];
             String postcodeText = csvCell[7];
             String countryText = csvCell[8];
-            
+
             write(firstName, firstNameText);
-            write(lastName,lastNameText);
-            write(email,emailText);
-            write(phone,phoneText);
-            write(password,passwordText);
-            write(passwordConfirm,passwordText);
-            write(address,addressText);
-            write(city,cityText);
-            write(postcode,postcodeText);
+            write(lastName, lastNameText);
+            write(email, emailText);
+            write(phone, phoneText);
+            write(password, passwordText);
+            write(passwordConfirm, passwordText);
+            write(address, addressText);
+            write(city, cityText);
+            write(postcode, postcodeText);
             selectFromDropdownByText(country, countryText);
             clickElement(state);
             clickElement(stateOption);
@@ -126,18 +106,14 @@ public void registerAccount() throws IOException{
             clickElement(conditionsPayment);
             clickElement(continuePaymentButton);
             clickElement(confirmOrderButton);
+            clickElement(finishOrderButton);
 
+        }
 
-}
+    }
 
-
-
-}
-
-public void clickLogin(){
-    clickElement(loginButton);
-}
-
-
+    public void clickLogin() {
+        clickElement(loginButton);
+    }
 
 }

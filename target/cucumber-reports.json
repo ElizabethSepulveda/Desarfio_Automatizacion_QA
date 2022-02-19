@@ -1,0 +1,247 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Scenario Outline name: Agregar productos al carrito de compras",
+        "description": "",
+        "id": "probar-funcionalidades-del-sitio-opencartabstracta.us;scenario-outline-name:-agregar-productos-al-carrito-de-compras;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3757227100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "navego al sitio web",
+            "match": {
+              "location": "HomeSteps.navigateToOpencart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 89745000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hago click en la barra de busqueda",
+            "match": {
+              "location": "HomeSteps.selectSearchOpencart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 617989300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ingreso el Ipod Classic en la barra de busqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ipod Classic",
+                  "offset": 11
+                }
+              ],
+              "location": "HomeSteps.writeSearchOpencart(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59523300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "agrego el producto al carro de compras",
+            "match": {
+              "location": "HomeSteps.enterProductOpencart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1013200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "valido que el producto haya sido agredado al carro de compras",
+            "match": {
+              "location": "HomeSteps.validateProductOpencart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Scenario Outline name: Agregar productos al carrito de compras",
+        "description": "",
+        "id": "probar-funcionalidades-del-sitio-opencartabstracta.us;scenario-outline-name:-agregar-productos-al-carrito-de-compras;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 464704800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "navego al sitio web",
+            "match": {
+              "location": "HomeSteps.navigateToOpencart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54144000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hago click en la barra de busqueda",
+            "match": {
+              "location": "HomeSteps.selectSearchOpencart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 583408900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ingreso el Imac en la barra de busqueda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Imac",
+                  "offset": 11
+                }
+              ],
+              "location": "HomeSteps.writeSearchOpencart(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50285200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "agrego el producto al carro de compras",
+            "match": {
+              "location": "HomeSteps.enterProductOpencart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 227500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "valido que el producto haya sido agredado al carro de compras",
+            "match": {
+              "location": "HomeSteps.validateProductOpencart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Realizar compra de productos desde el carrito de compras",
+        "description": "",
+        "id": "probar-funcionalidades-del-sitio-opencartabstracta.us;realizar-compra-de-productos-desde-el-carrito-de-compras",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 550563200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "ingreso al carrito de compras",
+            "match": {
+              "location": "ShoppingCartSteps.viewCart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2135731100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "hago click en boton checkout",
+            "match": {
+              "location": "ShoppingCartSteps.checkoutCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8101624600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "realizo creacion de cuenta y envio de compra",
+            "match": {
+              "location": "CheckOutSteps.createAccountOpencart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2002313700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "reviso el historial de ordenes",
+            "match": {
+              "location": "OrderHistorySteps.viewOrderDetails()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Probar funcionalidades del sitio opencartabstracta.us",
+    "description": "",
+    "id": "probar-funcionalidades-del-sitio-opencartabstracta.us",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/OpenCartAbstracta.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 2
+        }
+      }
+    ]
+  }
+]
