@@ -5,7 +5,8 @@ Feature: Probar funcionalidades del sitio opencartabstracta.us
     Scenario Outline: Scenario Outline name: Agregar productos al carrito de compras
 
         Given navego al sitio web
-        When ingreso el <product> en la barra de busqueda y lo agrego al carrito
+        When ingreso el <product> en la barra de busqueda
+        And agrego producto al carrito
         Then valido que el producto haya sido agregado al carro de compras
 
         Examples:

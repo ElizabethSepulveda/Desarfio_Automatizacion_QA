@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 13,
+        "line": 14,
         "name": "Scenario Outline name: Agregar productos al carrito de compras",
         "description": "",
         "id": "probar-funcionalidades-del-sitio-opencartabstracta.us;scenario-outline-name:-agregar-productos-al-carrito-de-compras;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3595370000,
+              "duration": 4090034600,
               "status": "passed"
             },
             "line": 7,
@@ -24,11 +24,11 @@
           },
           {
             "result": {
-              "duration": 943072600,
+              "duration": 2364365800,
               "status": "passed"
             },
             "line": 8,
-            "name": "ingreso el Ipod Classic en la barra de busqueda y lo agrego al carrito",
+            "name": "ingreso el Ipod Classic en la barra de busqueda",
             "match": {
               "arguments": [
                 {
@@ -42,10 +42,22 @@
           },
           {
             "result": {
-              "duration": 567506500,
+              "duration": 50094100,
               "status": "passed"
             },
             "line": 9,
+            "name": "agrego producto al carrito",
+            "match": {
+              "location": "HomeSteps.addProductCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 566718900,
+              "status": "passed"
+            },
+            "line": 10,
             "name": "valido que el producto haya sido agregado al carro de compras",
             "match": {
               "location": "HomeSteps.validateProductOpencart()"
@@ -60,7 +72,7 @@
         ]
       },
       {
-        "line": 14,
+        "line": 15,
         "name": "Scenario Outline name: Agregar productos al carrito de compras",
         "description": "",
         "id": "probar-funcionalidades-del-sitio-opencartabstracta.us;scenario-outline-name:-agregar-productos-al-carrito-de-compras;;3",
@@ -69,7 +81,7 @@
         "steps": [
           {
             "result": {
-              "duration": 300004400,
+              "duration": 1271070500,
               "status": "passed"
             },
             "line": 7,
@@ -81,11 +93,11 @@
           },
           {
             "result": {
-              "duration": 859840300,
+              "duration": 2233456400,
               "status": "passed"
             },
             "line": 8,
-            "name": "ingreso el Imac en la barra de busqueda y lo agrego al carrito",
+            "name": "ingreso el Imac en la barra de busqueda",
             "match": {
               "arguments": [
                 {
@@ -99,10 +111,22 @@
           },
           {
             "result": {
-              "duration": 548097900,
+              "duration": 53533200,
               "status": "passed"
             },
             "line": 9,
+            "name": "agrego producto al carrito",
+            "match": {
+              "location": "HomeSteps.addProductCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 547929400,
+              "status": "passed"
+            },
+            "line": 10,
             "name": "valido que el producto haya sido agregado al carro de compras",
             "match": {
               "location": "HomeSteps.validateProductOpencart()"
@@ -117,7 +141,7 @@
         ]
       },
       {
-        "line": 17,
+        "line": 18,
         "name": "Realizar compra de productos desde el carrito de compras",
         "description": "",
         "id": "probar-funcionalidades-del-sitio-opencartabstracta.us;realizar-compra-de-productos-desde-el-carrito-de-compras",
@@ -126,10 +150,10 @@
         "steps": [
           {
             "result": {
-              "duration": 568591900,
+              "duration": 367342400,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "ingreso al carrito de compras",
             "match": {
               "location": "ShoppingCartSteps.viewCart()"
@@ -138,10 +162,10 @@
           },
           {
             "result": {
-              "duration": 2253411500,
+              "duration": 2500650700,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "hago click en boton checkout",
             "match": {
               "location": "ShoppingCartSteps.checkoutCart()"
@@ -150,10 +174,10 @@
           },
           {
             "result": {
-              "duration": 6819081100,
+              "duration": 8394573300,
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "realizo creacion de cuenta y envio de compra",
             "match": {
               "location": "CheckOutSteps.createAccountOpencart()"
@@ -162,10 +186,10 @@
           },
           {
             "result": {
-              "duration": 1257955000,
+              "duration": 1269615800,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "ingreso al historial de ordenes",
             "match": {
               "location": "OrderHistorySteps.viewOrderDetails()"
@@ -174,10 +198,10 @@
           },
           {
             "result": {
-              "duration": 1090229100,
+              "duration": 1148144000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 24,
             "name": "valido los datos de la orden de compra",
             "match": {
               "location": "OrderHistorySteps.validateShipppingRate()"

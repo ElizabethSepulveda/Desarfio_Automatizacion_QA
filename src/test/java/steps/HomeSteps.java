@@ -2,6 +2,7 @@ package steps;
 
 import org.junit.Assert;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,18 +19,22 @@ public class HomeSteps {
         opencart.navigateToOpencartAbstracta();
     }
 
-    @When("^ingreso el (.+) en la barra de busqueda y lo agrego al carrito$")
+    @When("^ingreso el (.+) en la barra de busqueda$")
 
     public void writeSearchOpencart(String product) {
 
         opencart.selectSearchOpencartAbstracta();
-        opencart.eraseSearchTextbox();
         opencart.writeSearchOpencartAbstracta(product);
         opencart.searchProduct();
         String dir = System.getProperty("user.dir");
         opencart.takeScreenshot((dir + "\\test-output\\Screenshots_test\\Evidence_Cart_Product_" + product + ".png"));
-        opencart.clickAddButtonOpencartAbstracta();
 
+    }
+
+    @And("^agrego producto al carrito$")
+
+    public void addProductCart() {
+        opencart.clickAddButtonOpencartAbstracta();
     }
 
     @Then("^valido que el producto haya sido agregado al carro de compras$")
