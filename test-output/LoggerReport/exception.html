@@ -124,10 +124,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="3" parent-id="1">
+<tr class="s-fail" test-id="12" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Given ingreso al carrito de compras <br/><span class="text-muted text-sm">Realizar compra de productos desde el carrito de compras</span></td>
-	<td>0h 0m 11s+808msc</td>
+	<td>0h 0m 10s+806msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -136,23 +136,23 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Shopping Cart')] (tried for 10 second(s) with 500 milliseconds interval)
+		<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //tbody/tr[2]/td[4]/div[1]/input[1] (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pages.BasePage.find(BasePage.java:41)
-	at pages.BasePage.clickElement(BasePage.java:45)
-	at pages.ShoppingCartPage.clickProductCart(ShoppingCartPage.java:14)
-	at steps.ShoppingCartSteps.viewCart(ShoppingCartSteps.java:14)
-	at ?.ingreso al carrito de compras(src/test/resources/features/OpenCartAbstracta.feature:21)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Shopping Cart')]"}
+	at pages.BasePage.find(BasePage.java:50)
+	at pages.BasePage.write(BasePage.java:60)
+	at pages.ShoppingCartPage.enterShoppingCart(ShoppingCartPage.java:20)
+	at steps.ShoppingCartSteps.viewCart(ShoppingCartSteps.java:15)
+	at ?.ingreso al carrito de compras(src/test/resources/features/OpenCartAbstracta.feature:19)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[2]/td[4]/div[1]/input[1]"}
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-AVLRQQB', ip: '192.168.1.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\crist\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f016c68738263ee88dd3c26c3a0ff373
-*** Element info: {Using=xpath, value=//span[contains(text(),'Shopping Cart')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\crist\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 839dbe9527e40990f808c66099086b7a
+*** Element info: {Using=xpath, value=//tbody/tr[2]/td[4]/div[1]/input[1]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -170,10 +170,10 @@ Session ID: f016c68738263ee88dd3c26c3a0ff373
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at pages.BasePage.find(BasePage.java:41)
-	at pages.BasePage.clickElement(BasePage.java:45)
-	at pages.ShoppingCartPage.clickProductCart(ShoppingCartPage.java:14)
-	at steps.ShoppingCartSteps.viewCart(ShoppingCartSteps.java:14)
+	at pages.BasePage.find(BasePage.java:50)
+	at pages.BasePage.write(BasePage.java:60)
+	at pages.ShoppingCartPage.enterShoppingCart(ShoppingCartPage.java:20)
+	at steps.ShoppingCartSteps.viewCart(ShoppingCartSteps.java:15)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,6 +206,7 @@ Session ID: f016c68738263ee88dd3c26c3a0ff373
 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
 	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
@@ -257,7 +258,7 @@ Session ID: f016c68738263ee88dd3c26c3a0ff373
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Feb 19, 2022 04:17:33 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Feb 20, 2022 06:30:32 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

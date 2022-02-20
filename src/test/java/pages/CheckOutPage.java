@@ -101,10 +101,16 @@ public class CheckOutPage extends BasePage {
             clickElement(state);
             clickElement(policy);
             clickElement(continueRegisterButton);
+            String dir = System.getProperty("user.dir");
+            takeScreenshot((dir + "\\test-output\\Screenshots_test\\Evidence_CheckOut_Step_2.png"));
             clickElement(addressRegisterButton);
+            takeScreenshot((dir + "\\test-output\\Screenshots_test\\Evidence_CheckOut_Step_3.png"));
             clickElement(deliveryRegisterButton);
+            takeScreenshot((dir + "\\test-output\\Screenshots_test\\Evidence_CheckOut_Step_4.png"));
             clickElement(conditionsPayment);
+            takeScreenshot((dir + "\\test-output\\Screenshots_test\\Evidence_CheckOut_Step_5.png"));
             clickElement(continuePaymentButton);
+            takeScreenshot((dir + "\\test-output\\Screenshots_test\\Evidence_CheckOut_Step_6.png"));
             clickElement(confirmOrderButton);
             clickElement(finishOrderButton);
 

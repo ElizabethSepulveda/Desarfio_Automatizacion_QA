@@ -18,6 +18,13 @@ public class HomePage extends BasePage {
     public void selectSearchOpencartAbstracta() {
 
         clickElement(searchTextProduct);
+
+    }
+
+    public void eraseSearchTextbox() {
+
+        eraseSearch(searchTextProduct);
+
     }
 
     public void writeSearchOpencartAbstracta(String product) {
@@ -26,8 +33,9 @@ public class HomePage extends BasePage {
 
     }
 
-    public void clickSearchButtonOpencartAbstracta() {
+    public void searchProduct() {
         clickElement(searchButtonProduct);
+
     }
 
     public void clickAddButtonOpencartAbstracta() {

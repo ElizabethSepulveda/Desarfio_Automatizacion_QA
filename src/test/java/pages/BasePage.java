@@ -1,4 +1,5 @@
 package pages;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -18,7 +19,6 @@ public class BasePage {
 
     protected static WebDriver driver;
     private static WebDriverWait wait;
-    
 
     static {
 
@@ -26,7 +26,7 @@ public class BasePage {
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
-     
+
     }
 
     public BasePage(WebDriver driver) {
@@ -37,6 +37,7 @@ public class BasePage {
     public static void navigateTo(String url) {
         driver.get(url);
         driver.manage().window().maximize();
+
     }
 
     public static void closeBrowser() {
@@ -48,13 +49,19 @@ public class BasePage {
     }
 
     public void clickElement(String locator) {
+
         find(locator).click();
+
     }
 
     public void write(String locator, String textToWrite) {
         find(locator).clear();
         find(locator).sendKeys(textToWrite);
 
+    }
+
+    public void eraseSearch(String locator) {
+        find(locator).clear();
     }
 
     public void selectFromDropdownByText(String locator, String TextToSelect) {
@@ -66,12 +73,35 @@ public class BasePage {
     public boolean elementIsDisplayed(String locator) {
         return find(locator).isDisplayed();
 
-
     }
 
-    public void takeScreenshot(String pathname) throws IOException {
-        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File(pathname));
+    public String textFromElement(String locator) {
+        return find(locator).getText();
     }
 
+    public void takeScreenshot(String pathname) {
+
+        try {
+
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(src, new File(pathname));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+
+    public void takeScreeshotFromElement(String locator, String pathname)
+
+    {
+        try {
+
+            WebElement element = driver.findElement(By.xpath(locator));
+            File src = element.getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(src, new File(pathname));
+
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+    }
 }

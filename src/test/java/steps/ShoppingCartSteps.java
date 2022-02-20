@@ -11,7 +11,8 @@ public class ShoppingCartSteps {
     @Given("^ingreso al carrito de compras$")
 
     public void viewCart() {
-        shop.clickProductCart();
+
+        shop.enterShoppingCart();
 
     }
 
