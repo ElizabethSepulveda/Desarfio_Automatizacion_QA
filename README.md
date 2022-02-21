@@ -97,6 +97,8 @@ comando : gradle clean / gradle build via TERMINAL.
 
 Mediante el lenguaje java y la integración de selenium, se realizan pruebas sobre portal openabstracta donde se valida a nivel front funcionalidades básicas asociadas al enfoque que tiene el sitio, para lo anterior se utiliza un lenguaje de programacion orientado a objetos realizando modularización y validaciones de los ingresos a través de funciones que provee el framework.
 
+# Close
+
 
 
 
