@@ -1,7 +1,7 @@
-@test
+
 Feature: Probar funcionalidades del sitio opencartabstracta.us
 
-
+@test
     Scenario Outline: Scenario Outline name: Agregar productos al carrito de compras
 
         Given navego al sitio web
@@ -14,7 +14,7 @@ Feature: Probar funcionalidades del sitio opencartabstracta.us
             | Ipod Classic |
             | Imac         |
 
-
+@test
     Scenario: Realizar compra de productos desde el carrito de compras
 
         Given ingreso al carrito de compras
@@ -22,5 +22,12 @@ Feature: Probar funcionalidades del sitio opencartabstracta.us
         And realizo creacion de cuenta y envio de compra
         And ingreso al historial de ordenes
         Then valido los datos de la orden de compra
+
+@test
+    Scenario: Punto extra
+
+        Given ingreso el producto extra a la barra de busqueda
+        When agrego el producto extra al carrito
+        Then valido que el producto extra se encuentre en el carrito
 
 

@@ -50,6 +50,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -94,11 +102,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -128,30 +136,30 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags=""
+												devices="">
+												<span class="tt">02.20.2022 22:04:31</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Probar funcionalidades del sitio opencartabstracta.us] started</span>
+												
+											</div>
+											<div class="st pass test l1" 
 												tags="@test"
 												devices="">
-												<span class="tt">02.20.2022 19:54:43</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:31</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Probar funcionalidades del sitio opencartabstracta.us] started</span>
+												<span class="tn">|---[Scenario Outline name: Agregar productos al carrito de compras] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @test</span>
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
-												tags=""
-												devices="">
-												<span class="tt">02.20.2022 19:54:43</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Scenario Outline name: Agregar productos al carrito de compras] started</span>
-												
-											</div>
 											<div class="st pass test l2" 
 												tags="@test"
 												devices="">
-												<span class="tt">02.20.2022 19:54:43</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:31</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Scenario Outline name: Agregar productos al carrito de compras] started</span>
 												<span class="category-list">
@@ -162,12 +170,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:43</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:31</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given navego al sitio web] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:47</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:36</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given navego al sitio web]</span>
 													
@@ -177,12 +185,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:47</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:36</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When ingreso el Ipod Classic en la barra de busqueda] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When ingreso el Ipod Classic en la barra de busqueda]</span>
 													
@@ -192,12 +200,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And agrego producto al carrito] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And agrego producto al carrito]</span>
 													
@@ -207,12 +215,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido que el producto haya sido agregado al carro de compras] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:39</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido que el producto haya sido agregado al carro de compras]</span>
 													
@@ -222,7 +230,7 @@
 											<div class="st pass test l2" 
 												tags="@test"
 												devices="">
-												<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Scenario Outline name: Agregar productos al carrito de compras] started</span>
 												<span class="category-list">
@@ -233,12 +241,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:50</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given navego al sitio web] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:52</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:40</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given navego al sitio web]</span>
 													
@@ -248,12 +256,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:52</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:40</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When ingreso el Imac en la barra de busqueda] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:42</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When ingreso el Imac en la barra de busqueda]</span>
 													
@@ -263,12 +271,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:42</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And agrego producto al carrito] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:42</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And agrego producto al carrito]</span>
 													
@@ -278,12 +286,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:42</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido que el producto haya sido agregado al carro de compras] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:43</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido que el producto haya sido agregado al carro de compras]</span>
 													
@@ -293,7 +301,7 @@
 											<div class="st pass test l1" 
 												tags="@test"
 												devices="">
-												<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:43</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Realizar compra de productos desde el carrito de compras] started</span>
 												<span class="category-list">
@@ -304,12 +312,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:54</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:43</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given ingreso al carrito de compras] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:55</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:43</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given ingreso al carrito de compras]</span>
 													
@@ -319,12 +327,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:55</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:43</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When hago click en boton checkout] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:54:57</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:45</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When hago click en boton checkout]</span>
 													
@@ -334,12 +342,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:54:57</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:45</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And realizo creacion de cuenta y envio de compra] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:55:06</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:54</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And realizo creacion de cuenta y envio de compra]</span>
 													
@@ -349,12 +357,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:55:06</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:54</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And ingreso al historial de ordenes] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:55:07</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:55</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And ingreso al historial de ordenes]</span>
 													
@@ -364,16 +372,95 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.20.2022 19:55:07</span>&nbsp;
+												<span class="tt">02.20.2022 22:04:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido los datos de la orden de compra] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.20.2022 19:55:08</span>&nbsp;
+													<span class="tt">02.20.2022 22:04:56</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido los datos de la orden de compra]</span>
 													
 													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l1" 
+												tags="@test"
+												devices="">
+												<span class="tt">02.20.2022 22:04:56</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Punto extra] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @test</span>
+												</span>
+												
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">02.20.2022 22:04:56</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given ingreso el producto extra a la barra de busqueda] started</span>
+												
+												<div class="st fail">
+													<span class="tt">02.20.2022 22:04:59</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given ingreso el producto extra a la barra de busqueda]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AVLRQQB', ip: '192.168.1.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\crist\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c4a59c7944b08a4ffe94b674cfeb625
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at pages.PuntoExtraPage.searchProductExtra(PuntoExtraPage.java:39)
+	at steps.PuntoExtraSteps.writeSearchOpencart(PuntoExtraSteps.java:27)
+	at ?.ingreso el producto extra a la barra de busqueda(src/test/resources/features/OpenCartAbstracta.feature:29)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">02.20.2022 22:04:59</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When agrego el producto extra al carrito] started</span>
+												
+												<div class="st skip">
+													<span class="tt">02.20.2022 22:04:59</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When agrego el producto extra al carrito]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">02.20.2022 22:04:59</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido que el producto extra se encuentre en el carrito] started</span>
+												
+												<div class="st skip">
+													<span class="tt">02.20.2022 22:04:59</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then valido que el producto extra se encuentre en el carrito]</span>
+													
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
 											</div>

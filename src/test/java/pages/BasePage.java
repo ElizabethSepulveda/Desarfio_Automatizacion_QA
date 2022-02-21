@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -70,6 +71,11 @@ public class BasePage {
 
     }
 
+    public void selectFromDropdownByValue(String locator, String value){
+        Select dropdown = new Select(find(locator));
+        dropdown.selectByValue(value);
+    }
+
     public boolean elementIsDisplayed(String locator) {
         return find(locator).isDisplayed();
 
@@ -104,4 +110,16 @@ public class BasePage {
         }
 
     }
+
+    public void checkAlert() {
+        try {
+          WebDriverWait wait = new WebDriverWait(driver, 2);
+          wait.until(ExpectedConditions.alertIsPresent());
+          Alert alert = driver.switchTo().alert();
+          alert.accept();
+        } catch (Exception e) {
+ 
+      }
+}
+
 }

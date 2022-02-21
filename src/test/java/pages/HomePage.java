@@ -42,6 +42,8 @@ public class HomePage extends BasePage {
        
     }
 
+
+
     public void clickAddButtonOpencartAbstracta() {
         clickElement(AddToCartButtton);
     }
